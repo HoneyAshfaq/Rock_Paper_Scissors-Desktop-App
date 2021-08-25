@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #CCFFFF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="587.0" minWidth="10.0" prefWidth="559.2" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="387.60003051757815" minWidth="10.0" prefWidth="240.60000000000002" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="194.4" minHeight="10.0" prefHeight="22.8" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="384.8" minHeight="10.0" prefHeight="376.8" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="2">
+         <effect>
+            <SepiaTone />
+         </effect></VBox>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="title_l" layoutX="183.0" text="WELCOME" textFill="#ba5f5f" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+               <effect>
+                  <ColorAdjust>
+                     <input>
+                        <SepiaTone />
+                     </input>
+                  </ColorAdjust>
+               </effect></Label>
+            <ChoiceBox fx:id="cb" layoutX="162.0" layoutY="87.0" prefHeight="25.0" prefWidth="235.0">
+               <effect>
+                  <InnerShadow />
+               </effect></ChoiceBox>
+            <Button fx:id="b1" layoutX="250.0" layoutY="156.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="60.0" text="Play">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Label fx:id="name_l" layoutX="49.0" layoutY="237.0" text="Player" textFill="#9c1782">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font></Label>
+            <Label fx:id="equal_l_1" layoutX="139.0" layoutY="237.0" text="=">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font></Label>
+            <Label fx:id="count_l_1" layoutX="186.0" layoutY="237.0" text="0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+            <Label fx:id="computer_l" layoutX="305.0" layoutY="237.0" text="Computer" textFill="#36ab27">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font></Label>
+            <Label fx:id="equal_l_2" layoutX="443.0" layoutY="237.0" text="=">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+            <Label fx:id="count_l_2" layoutX="484.0" layoutY="237.0" text="0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Pane>
+      <Pane prefHeight="373.0" prefWidth="199.0" style="-fx-background-color: #001933;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="text" layoutX="35.0" layoutY="30.0" prefHeight="25.0" prefWidth="178.0" promptText="Enter Player Name">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect></TextField>
+            <Button fx:id="b2" layoutX="90.0" layoutY="89.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" text="Set Name">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Label fx:id="description_l_1" layoutX="16.0" layoutY="148.0" text="1. Enter your name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="description_l_2" layoutX="16.0" layoutY="175.0" text="2. Choose any one object" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label fx:id="r_l" layoutX="84.0" layoutY="239.0" text="a. Rock" textFill="#489229" underline="true">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></Label>
+            <Label fx:id="p_l" layoutX="81.0" layoutY="260.0" text="b. Paper" textFill="#94841d" underline="true">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="76.0" layoutY="281.0" text="c. Scissors" textFill="#962f1e" underline="true">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="37.0" layoutY="202.0" text="from choice box-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
